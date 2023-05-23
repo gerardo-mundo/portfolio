@@ -2,15 +2,15 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { CanvasLoader } from "./CanvasLoader";
 import { OrbitControls, Preload } from "@react-three/drei";
-import { Computer3D } from "./Computer3D";
+import { Model3D } from "./Model3D";
 
-export const ComputerCanvas = () => {
+export const Model3DCanvas = () => {
   return (
     <Canvas
-      frameloop="demand"
-      shadows
+      frameloop="always"
+      shadows="soft"
       dpr={[1, 2]}
-      camera={{ position: [20, 20, 10], fov: 25 }}
+      camera={{ position: [40, 40, 10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -19,7 +19,7 @@ export const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computer3D />
+        <Model3D />
       </Suspense>
       <Preload all />
     </Canvas>

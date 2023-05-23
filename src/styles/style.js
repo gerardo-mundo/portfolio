@@ -70,6 +70,11 @@ export const FlexGrouper = styled.div`
   gap: 45px;
 `;
 
+export const FlexTop = styled(FlexGrouper)`
+  margin: 0 auto;
+  justify-content: space-between;
+`;
+
 export const BlockContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -143,6 +148,43 @@ export const CardImage = styled(Card)`
     &:hover {
       background-color: ${hoverColor};
     }
+  }
+`;
+
+export const FormContainer = styled.div`
+  label {
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    height: 20%;
+    padding: 5px;
+    border: 1px solid ${purple};
+    resize: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    :focus {
+      outline: 2px solid ${blue};
+      border: none;
+    }
+  }
+
+  button {
+    border: none;
+    padding: 8px;
+    border-radius: 2.5px;
+    color: white;
+    background-color: purple;
+    :hover {
+      background-color: ${hoverColor};
+      cursor: pointer;
+    }
+  }
+
+  .field-container {
+    margin-top: 10px;
   }
 `;
 
