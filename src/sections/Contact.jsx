@@ -6,10 +6,10 @@ export const Contact = () => {
   return (
     <Section>
       <FlexTop>
-        <Form />
         <CanvasContainer>
           <Model3DCanvas />
         </CanvasContainer>
+        <Form />
       </FlexTop>
     </Section>
   );
