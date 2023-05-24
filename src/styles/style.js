@@ -56,10 +56,18 @@ export const NavbarContainer = styled.nav`
     display: flex;
     list-style: none;
     gap: 25px;
+  }
 
-    li {
-      cursor: pointer;
+  a {
+    cursor: pointer;
+    color: gray;
+    :hover {
+      color: white;
     }
+  }
+
+  .active {
+    color: ${hoverColor};
   }
 `;
 
