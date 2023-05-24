@@ -1,16 +1,23 @@
-import { CanvasContainer, FlexTop, Section } from "../styles/style";
-import { Model3DCanvas } from "../components/Model3DCanvas";
-import { Form } from "../components/Form";
+import { Footer, Model3DCanvas, Form } from "../components";
+import {
+  CanvasContainer,
+  DisplayBlockContainer,
+  FlexTop,
+  Section,
+} from "../styles/style";
 
 export const Contact = () => {
   return (
     <Section>
-      <FlexTop>
-        <CanvasContainer>
-          <Model3DCanvas />
-        </CanvasContainer>
-        <Form />
-      </FlexTop>
+      <DisplayBlockContainer>
+        <FlexTop>
+          <CanvasContainer>
+            <Model3DCanvas />
+          </CanvasContainer>
+          <Form />
+        </FlexTop>
+        <Footer />
+      </DisplayBlockContainer>
     </Section>
   );
 };
