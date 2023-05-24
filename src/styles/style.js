@@ -42,11 +42,12 @@ export const Section = styled.div`
   display: flex;
 `;
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
   max-width: 100%;
   padding: 0 55px;
-  background: ${darkBlue};
-  background: linear-gradient(90deg, ${darkBlueAlpha} 0%, ${purple} 50%);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,6 +94,12 @@ export const BlockContainer = styled.div`
     font-size: 16px;
     font-weight: 500;
   }
+`;
+
+export const DisplayBlockContainer = styled(BlockContainer)`
+  width: 100%;
+  justify-content: space-between;
+  margin: 80px 0 0 0;
 `;
 
 export const CardsContainer = styled.div`
@@ -185,6 +192,33 @@ export const FormContainer = styled.div`
 
   .field-container {
     margin-top: 10px;
+  }
+`;
+
+export const FooterContainer = styled.footer`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  height: 18%;
+  background: linear-gradient(90deg, ${darkBlueAlpha} 20%, ${purple} 100%);
+  p {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  .img-grouper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  img {
+    max-width: 23px;
+    max-height: 23px;
+    cursor: pointer;
   }
 `;
 
