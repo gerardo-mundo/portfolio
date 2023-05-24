@@ -5,21 +5,22 @@ import { navLinks } from "../utils/";
 export const Navbar = () => {
   return (
     <NavbarContainer>
-      <h3>Logo</h3>
-      <ul>
+      <h3>{">"} Gerardo_Dev</h3>
+      <nav>
         {navLinks.map((link) => {
           return (
             <Link
               key={link.id}
               activeClass="active"
+              className="nav-item"
               smooth={true}
-              to={link.section}
+              to={link.name}
             >
-              {link.name}
+              {link.title}
             </Link>
           );
         })}
-      </ul>
+      </nav>
     </NavbarContainer>
   );
 };

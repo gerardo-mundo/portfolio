@@ -24,25 +24,32 @@ body {
 
 export const Container = styled.div`
   color: white;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  //height: 100vh;
+  //scroll-snap-type: y mandatory;
+  //scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
   &::--webkit-scrollbar {
     display: none;
   }
   background-image: url("../assets/bg.jpeg");
+
+  .section {
+    height: 100vh;
+    margin-top: 20px;
+    //scroll-snap-align: center;
+    display: flex;
+  }
 `;
 
 export const Section = styled.div`
   height: 100vh;
-  margin-top: 100px;
-  scroll-snap-align: center;
+  margin-top: 20px;
+  //scroll-snap-align: center;
   display: flex;
 `;
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.div`
   max-width: 100%;
   padding: 0 55px;
   backdrop-filter: blur(10px) saturate(180%);
@@ -52,22 +59,22 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  ul {
+  nav {
     display: flex;
     list-style: none;
     gap: 25px;
-  }
 
-  a {
-    cursor: pointer;
-    color: gray;
-    :hover {
-      color: white;
+    .nav-item {
+      cursor: pointer;
+      color: gray;
+      :hover {
+        color: white;
+      }
     }
-  }
 
-  .active {
-    color: ${hoverColor};
+    .active {
+      color: ${hoverColor};
+    }
   }
 `;
 

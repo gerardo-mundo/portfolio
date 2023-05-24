@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
 
-import {
-  BlockContainer,
-  CardImage,
-  CardsContainer,
-  Section,
-} from "../styles/style";
+import { BlockContainer, CardImage, CardsContainer } from "../styles/style";
 import { projects } from "../utils/projects";
+import { Element } from "react-scroll";
 
-export const Work = () => {
+export const Projects = () => {
   return (
-    <Section>
+    <Element className="section" name="projects">
       <BlockContainer>
         <h3>¿Qué he hecho hasta ahora?</h3>
         <h2>Proyectos</h2>
@@ -39,6 +35,6 @@ export const Work = () => {
           })}
         </CardsContainer>
       </BlockContainer>
-    </Section>
+    </Element>
   );
 };

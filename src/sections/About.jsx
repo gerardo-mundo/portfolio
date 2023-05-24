@@ -1,11 +1,12 @@
 import { Tilt } from "react-tilt";
 
-import { BlockContainer, Card, CardsContainer, Section } from "../styles/style";
+import { BlockContainer, Card, CardsContainer } from "../styles/style";
 import { cardsContent } from "../utils/cardsContent";
+import { Element } from "react-scroll";
 
 export const About = () => {
   return (
-    <Section>
+    <Element className="section" name="about">
       <BlockContainer>
         <h3>Introducción</h3>
         <h2>Sobre mí:</h2>
@@ -32,6 +33,6 @@ export const About = () => {
           ))}
         </CardsContainer>
       </BlockContainer>
-    </Section>
+    </Element>
   );
 };

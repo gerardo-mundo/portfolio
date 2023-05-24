@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 
 import { Navbar } from "../components/Navbar";
-import { FlexGrouper, Img, Left, Right, Section } from "../styles/style";
+import { FlexGrouper, Img, Left, Right } from "../styles/style";
+import { Element } from "react-scroll";
 
 export const Hero = () => {
   return (
-    <Section>
+    <Element className="section" name="home">
       <motion.div
         style={{
           position: "fixed",
@@ -39,6 +40,6 @@ export const Hero = () => {
           <Img alt="laptop_picture" src="../assets/laptop.png" />
         </Right>
       </FlexGrouper>
-    </Section>
+    </Element>
   );
 };

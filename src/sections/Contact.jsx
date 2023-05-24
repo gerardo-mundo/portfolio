@@ -1,14 +1,14 @@
+import { Element } from "react-scroll";
 import { Footer, Model3DCanvas, Form } from "../components";
 import {
   CanvasContainer,
   DisplayBlockContainer,
   FlexTop,
-  Section,
 } from "../styles/style";
 
 export const Contact = () => {
   return (
-    <Section>
+    <Element className="section" name="contact">
       <DisplayBlockContainer>
         <FlexTop>
           <CanvasContainer>
@@ -18,6 +18,6 @@ export const Contact = () => {
         </FlexTop>
         <Footer />
       </DisplayBlockContainer>
-    </Section>
+    </Element>
   );
 };
