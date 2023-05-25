@@ -1,8 +1,10 @@
-import { motion } from "framer-motion";
+import { Suspense } from "react";
 
-import { Navbar } from "../components/Navbar";
-import { FlexGrouper, Img, Left, Right } from "../styles/style";
+import { motion } from "framer-motion";
 import { Element } from "react-scroll";
+
+import { CanvasLoader, Navbar } from "../components";
+import { FlexGrouper, Img, Left, Right } from "../styles/style";
 
 export const Hero = () => {
   return (
@@ -37,7 +39,9 @@ export const Hero = () => {
           </p>
         </Left>
         <Right>
-          <Img alt="laptop_picture" src="../assets/laptop.png" />
+          <Suspense fallback={<CanvasLoader />}>
+            <Img alt="laptop_picture" src="../assets/laptop.png" />
+          </Suspense>
         </Right>
       </FlexGrouper>
     </Element>
