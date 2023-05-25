@@ -1,23 +1,16 @@
 import { Element } from "react-scroll";
-import { Footer, Model3DCanvas, Form } from "../components";
-import {
-  CanvasContainer,
-  DisplayBlockContainer,
-  FlexTop,
-} from "../styles/style";
+import { Model3DCanvas, Form } from "../components";
+import { CanvasContainer } from "../styles/style";
 
 export const Contact = () => {
   return (
-    <Element className="section" name="contact">
-      <DisplayBlockContainer>
-        <FlexTop>
-          <CanvasContainer>
-            <Model3DCanvas />
-          </CanvasContainer>
-          <Form />
-        </FlexTop>
-        <Footer />
-      </DisplayBlockContainer>
-    </Element>
+    <section>
+      <Element className="section" name="contact">
+        <CanvasContainer>
+          <Model3DCanvas />
+        </CanvasContainer>
+        <Form />
+      </Element>
+    </section>
   );
 };

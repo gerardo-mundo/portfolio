@@ -6,7 +6,8 @@ export const mainColor = "#8a56dd",
   blue = "rgba(0, 125, 150, 1)",
   darkBlue = "rgb(2, 0, 36)",
   darkBlueAlpha = "rgb(2, 0, 36, 1)",
-  purple = "rgba(30, 30, 127, 1)";
+  purple = "rgba(30, 30, 127, 1)",
+  gray = "#999999";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -14,31 +15,35 @@ html {
   font-family: 'Rubik', sans-serif;
   
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
 }
+
+svg {
+    max-width: 23px;
+    max-height: 23px;
+    cursor: pointer;
+    :hover {
+      fill: white;
+    }
+  }
 `;
 
-export const Container = styled.div`
+export const Container = styled.main`
   color: white;
-  //height: 100vh;
-  //scroll-snap-type: y mandatory;
-  //scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
-  &::--webkit-scrollbar {
-    display: none;
-  }
   background-image: url("../assets/bg.jpeg");
+  background-size: cover;
 
   .section {
     height: 100vh;
-    margin-top: 20px;
-    //scroll-snap-align: center;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -56,13 +61,18 @@ export const NavbarContainer = styled.div`
     display: flex;
     list-style: none;
     gap: 25px;
+    align-items: center;
 
     .nav-item {
       cursor: pointer;
-      color: gray;
+      color: ${gray};
       :hover {
         color: white;
       }
+    }
+    .svg-grouper {
+      display: flex;
+      gap: 8px;
     }
 
     .active {
@@ -71,7 +81,9 @@ export const NavbarContainer = styled.div`
   }
   .aligned {
     display: flex;
+    align-items: center;
     gap: 4px;
+    cursor: pointer;
   }
 `;
 
@@ -81,11 +93,6 @@ export const FlexGrouper = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 45px;
-`;
-
-export const FlexTop = styled(FlexGrouper)`
-  margin: 0 auto;
-  justify-content: space-between;
 `;
 
 export const BlockContainer = styled.div`
@@ -106,12 +113,6 @@ export const BlockContainer = styled.div`
     font-size: 16px;
     font-weight: 500;
   }
-`;
-
-export const DisplayBlockContainer = styled(BlockContainer)`
-  width: 100%;
-  justify-content: space-between;
-  margin: 80px 0 0 0;
 `;
 
 export const CardsContainer = styled.div`
@@ -185,7 +186,7 @@ export const FormContainer = styled.div`
     margin: 5px 0;
     border-radius: 5px;
     :focus {
-      outline: 2px solid ${blue};
+      outline: 3px solid ${purple};
       border: none;
     }
   }
@@ -219,18 +220,14 @@ export const FooterContainer = styled.footer`
   background: linear-gradient(90deg, ${darkBlueAlpha} 20%, ${purple} 100%);
   p {
     margin: 0;
+    color: ${gray};
     font-weight: lighter;
     font-size: 12px;
   }
-  .img-grouper {
+  .svg-grouper {
     display: flex;
     gap: 8px;
     margin-bottom: 5px;
-  }
-  img {
-    max-width: 23px;
-    max-height: 23px;
-    cursor: pointer;
   }
 `;
 
