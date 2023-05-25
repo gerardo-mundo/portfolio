@@ -5,7 +5,10 @@ import { navLinks } from "../utils/";
 export const Navbar = () => {
   return (
     <NavbarContainer>
-      <h3>{">"} Gerardo_Dev</h3>
+      <div className="aligned">
+        <img src="../../assets/icons/terminal.svg" alt="terminal-icon" />
+        <h3>Gerardo_Dev</h3>
+      </div>
       <nav>
         {navLinks.map((link) => {
           return (

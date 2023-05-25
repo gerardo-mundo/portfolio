@@ -42,13 +42,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Section = styled.div`
-  height: 100vh;
-  margin-top: 20px;
-  //scroll-snap-align: center;
-  display: flex;
-`;
-
 export const NavbarContainer = styled.div`
   max-width: 100%;
   padding: 0 55px;
@@ -75,6 +68,10 @@ export const NavbarContainer = styled.div`
     .active {
       color: ${hoverColor};
     }
+  }
+  .aligned {
+    display: flex;
+    gap: 4px;
   }
 `;
 
