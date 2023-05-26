@@ -32,19 +32,32 @@ svg {
       fill: white;
     }
   }
+
+   .section {
+   //height: 100vh;
+   margin: 0 15px 20px 15px;
+   padding-top: 80px;
+   justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+
+    button {
+      width: 100%;
+    }
+    }
+  }
 `;
 
 export const Container = styled.main`
   color: white;
   background-image: url("../assets/bg.jpeg");
   background-size: cover;
-
-  .section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -56,6 +69,11 @@ export const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 
   nav {
     display: flex;
@@ -87,13 +105,13 @@ export const NavbarContainer = styled.div`
   }
 `;
 
-export const FlexGrouper = styled.div`
-  display: flex;
-  margin: 100px 50px;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 45px;
-`;
+// export const FlexGrouper = styled.div`
+//   display: flex;
+//   margin: 100px 50px;
+//   justify-content: flex-end;
+//   align-items: center;
+//   gap: 45px;
+// `;
 
 export const BlockContainer = styled.div`
   display: flex;
@@ -172,6 +190,11 @@ export const CardImage = styled(Card)`
 `;
 
 export const FormContainer = styled.div`
+  @media (max-width: 600px) {
+    width: 90%;
+    margin: 0 10px;
+  }
+
   label {
     margin-bottom: 10px;
   }
@@ -236,6 +259,7 @@ export const Left = styled.div`
   justify-content: center;
 
   h1 {
+    margin-top: 10px;
     font-size: 45px;
     margin-bottom: 0;
   }
@@ -262,13 +286,13 @@ export const Right = styled.div`
 `;
 
 export const CanvasContainer = styled.div`
-  width: 50vw;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Img = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
 
   animation: animate 2s infinite ease alternate;
 

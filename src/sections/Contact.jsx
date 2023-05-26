@@ -4,13 +4,13 @@ import { CanvasContainer } from "../styles/style";
 
 export const Contact = () => {
   return (
-    <section>
-      <Element className="section" name="contact">
+    <section className="section">
+      <Element name="contact">
         <CanvasContainer>
           <Model3DCanvas />
         </CanvasContainer>
-        <Form />
       </Element>
+      <Form />
     </section>
   );
 };

@@ -30,12 +30,7 @@ export const Model3D = () => {
 
       <pointLight intensity={0.5} />
 
-      <primitive
-        object={model3D.scene}
-        scale={12}
-
-        // position={[10, -4, -2]}
-      />
+      <primitive object={model3D.scene} scale={10} />
     </mesh>
   );
 };
