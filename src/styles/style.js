@@ -38,7 +38,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
   .section {
-   //height: 100vh;
     margin: 0 15px 20px 15px;
     padding-top: 80px;
     justify-content: space-evenly;
@@ -46,10 +45,29 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: row;
     align-items: center;
 
+    .flex-1 {
+      width: 60%;
+      canvas {
+        min-width: 90%;
+        min-height: 90%;
+      }
+    }
+
+    .flex-2 {
+      min-width: 25%;
+    }
+
     @media (max-width: 600px) {
     flex-direction: column;
     justify-content: center;
-    //align-items: center;
+    
+    .flex-1 {
+      width: 50%;
+      canvas {
+        min-width: 70%;
+        min-height: 70%;
+      }
+    }
 
       button {
         width: 100%;
@@ -349,11 +367,6 @@ export const Right = styled.div`
   flex: 2;
   display: flex;
   justify-content: center;
-`;
-
-export const CanvasContainer = styled.div`
-  width: 100%;
-  height: 100%;
 `;
 
 export const Img = styled.img`
