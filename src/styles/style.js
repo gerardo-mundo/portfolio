@@ -65,19 +65,9 @@ export const Container = styled.main`
 `;
 
 export const NavbarContainer = styled.div`
-  max-width: 100%;
-  padding: 0 55px;
-  backdrop-filter: blur(10px) saturate(180%);
-  -webkit-backdrop-filter: blur(10px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  img {
+    cursor: pointer;
+  }
 
   nav {
     display: flex;
@@ -107,6 +97,59 @@ export const NavbarContainer = styled.div`
     gap: 4px;
     cursor: pointer;
   }
+
+  max-width: 100%;
+  padding: 0 55px;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  @media (max-width: 720px) {
+    nav {
+      display: none;
+    }
+  }
+  @media (min-width: 720px) {
+    img {
+      display: none;
+    }
+  }
+`;
+
+export const NavbarLIst = styled.div`
+  nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+
+    .nav-item {
+      cursor: pointer;
+      color: ${gray};
+      :hover {
+        color: white;
+      }
+    }
+  }
+
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  background: ${darkBlue};
+  background: linear-gradient(${darkBlueAlpha} 0%, ${purple} 50%);
+  padding: 20px;
+  min-height: 140px;
+  min-width: 80px;
+  border-radius: 3px;
 `;
 
 // export const FlexGrouper = styled.div`
