@@ -255,6 +255,12 @@ export const FormContainer = styled.div`
     margin: 0 10px;
   }
 
+  form {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: ${purple};
+  }
+
   label {
     margin-bottom: 10px;
   }
