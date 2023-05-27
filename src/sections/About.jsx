@@ -1,7 +1,7 @@
 import { Tilt } from "react-tilt";
 import { Element } from "react-scroll";
 
-import { BlockContainer, Card, CardsContainer } from "../styles/style";
+import { BlockContainer, Card } from "../styles/style";
 import { cardsContent } from "../utils/cardsContent";
 
 export const About = () => {
@@ -22,7 +22,7 @@ export const About = () => {
           </p>
           <p>¡Trabajemos de la mano para traer tus ideas a la vida!</p>
 
-          <CardsContainer>
+          <div className="cards-container">
             {cardsContent.map((card) => (
               <Tilt key={card.title} style={{ width: "100%" }}>
                 <Card key={card.title}>
@@ -32,7 +32,7 @@ export const About = () => {
                 </Card>
               </Tilt>
             ))}
-          </CardsContainer>
+          </div>
         </BlockContainer>
       </Element>
     </section>

@@ -21,7 +21,7 @@ export const cardsContent = [
   },
   {
     title: "Datos",
-    content: "SQL Server",
+    content: "My SQL Server",
     icon: mobileIcon,
   },
 ];

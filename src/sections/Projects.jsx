@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { BlockContainer, CardImage, CardsContainer } from "../styles/style";
+import { BlockContainer, CardImage } from "../styles/style";
 import { projects } from "../utils/projects";
 import { Element } from "react-scroll";
 
@@ -16,7 +16,7 @@ export const Projects = () => {
             como en equipo, son los siguientes:
           </p>
 
-          <CardsContainer>
+          <div className="cards-container">
             {projects.map((project, index) => {
               return (
                 <CardImage key={index}>
@@ -24,6 +24,7 @@ export const Projects = () => {
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
                   <motion.div
+                    style={{ marginTop: "15px" }}
                     className="box"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -34,7 +35,7 @@ export const Projects = () => {
                 </CardImage>
               );
             })}
-          </CardsContainer>
+          </div>
         </BlockContainer>
       </Element>
     </section>

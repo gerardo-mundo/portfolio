@@ -1,9 +1,17 @@
+import { useState } from "react";
+
 import { Link } from "react-scroll";
+
 import { NavbarContainer } from "../styles/style";
-import { navLinks } from "../utils/";
-import { ContactIcons } from "./ContactIcons";
+import { NavbarItems } from "./NavbarItems";
+import { NavList } from "./NavList";
 
 export const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const menu = "../../assets/menu.svg";
+  const close = "../../assets/close.svg";
+
   return (
     <NavbarContainer>
       <Link smooth={true} to="home">
@@ -22,22 +30,16 @@ export const Navbar = () => {
           <h3>Gerardo_Dev</h3>
         </div>
       </Link>
-      <nav>
-        {navLinks.map((link) => {
-          return (
-            <Link
-              key={link.id}
-              activeClass="active"
-              className="nav-item"
-              smooth={true}
-              to={link.name}
-            >
-              {link.title}
-            </Link>
-          );
-        })}
-        <ContactIcons />
-      </nav>
+      {toggle ? (
+        <NavList />
+      ) : (
+        <NavbarItems toggle={toggle} setToggle={setToggle} />
+      )}
+      <img
+        onClick={() => setToggle(!toggle)}
+        src={toggle ? close : menu}
+        alt="menu"
+      />
     </NavbarContainer>
   );
 };

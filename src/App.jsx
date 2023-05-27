@@ -1,4 +1,4 @@
-import { Footer } from "./components";
+import { Footer, Navbar } from "./components";
 import { About, Contact, Hero, Projects } from "./sections";
 
 import { Container } from "./styles/style";
@@ -6,6 +6,7 @@ import { Container } from "./styles/style";
 function App() {
   return (
     <Container>
+      <Navbar />
       <Hero />
       <About />
       <Projects />
