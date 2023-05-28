@@ -3,18 +3,25 @@ import { motion } from "framer-motion";
 import { BlockContainer, CardImage } from "../styles/style";
 import { projects } from "../utils/projects";
 import { Element } from "react-scroll";
+import { Animator } from "../components/hoc/Animator";
 
 export const Projects = () => {
   return (
     <section>
       <Element className="section" name="projects">
         <BlockContainer>
-          <h3>¿Qué he hecho hasta ahora?</h3>
-          <h2>Proyectos</h2>
-          <p>
-            Algunos proyectos que he desarrollado tanto de manera individual
-            como en equipo, son los siguientes:
-          </p>
+          <Animator>
+            <h3>¿Qué he hecho hasta ahora?</h3>
+          </Animator>
+          <Animator>
+            <h2>Proyectos</h2>
+          </Animator>
+          <Animator>
+            <p>
+              Algunos proyectos que he desarrollado tanto de manera individual
+              como en equipo, son los siguientes:
+            </p>
+          </Animator>
 
           <div className="cards-container">
             {projects.map((project, index) => {

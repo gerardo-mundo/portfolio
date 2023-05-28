@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   .section {
     margin: 0 15px 20px 15px;
     padding-top: 80px;
-    justify-content: space-evenly;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
