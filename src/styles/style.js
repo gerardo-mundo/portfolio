@@ -41,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 15px 20px 15px;
     padding-top: 80px;
     //justify-content: center;
-    //align-items: center;
+    align-items: center;
     display: flex;
    
 

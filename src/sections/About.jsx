@@ -25,6 +25,8 @@ export const About = () => {
               finalidad de crear soluciones eficientes, escalables y amigables,
               que se enfoquen en solucionar problemas del mundo real
             </p>
+          </Animator>
+          <Animator>
             <p>¡Trabajemos de la mano para traer tus ideas a la vida!</p>
           </Animator>
 
