@@ -16,7 +16,7 @@ export const Model3D = () => {
 
   return (
     <mesh ref={meshRef}>
-      <primitive object={model3D.scene} scale={14} />
+      <primitive object={model3D.scene} scale={10} />
     </mesh>
   );
 };

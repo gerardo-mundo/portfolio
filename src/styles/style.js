@@ -40,10 +40,10 @@ export const GlobalStyle = createGlobalStyle`
   .section {
     margin: 0 15px 20px 15px;
     padding-top: 80px;
-    justify-content: center;
+    //justify-content: center;
+    //align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+   
 
     .flex-1 {
       width: 60%;
@@ -59,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 600px) {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     
     .flex-1 {
       width: 50%;
