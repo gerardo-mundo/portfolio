@@ -1,16 +1,15 @@
 import { Element } from "react-scroll";
 import { Model3DCanvas, Form } from "../components";
-import { CanvasContainer } from "../styles/style";
 
 export const Contact = () => {
   return (
     <section className="section">
-      <Element name="contact">
-        <CanvasContainer>
-          <Model3DCanvas />
-        </CanvasContainer>
+      <div className="flex-1">
+        <Model3DCanvas />
+      </div>
+      <Element className="flex-2" name="contact">
+        <Form />
       </Element>
-      <Form />
     </section>
   );
 };

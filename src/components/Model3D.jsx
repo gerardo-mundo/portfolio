@@ -16,20 +16,6 @@ export const Model3D = () => {
 
   return (
     <mesh ref={meshRef}>
-      <hemisphereLight intensity={0.6} groundColor="black" />
-      <spotLight
-        position={[50, 50, 10]}
-        angle={0.7}
-        penumbra={0.3}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-
-      <ambientLight intensity={0.3} />
-
-      <pointLight intensity={0.5} />
-
       <primitive object={model3D.scene} scale={10} />
     </mesh>
   );

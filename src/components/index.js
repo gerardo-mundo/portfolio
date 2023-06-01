@@ -1,3 +1,4 @@
+export * from "./CanvasBall";
 export * from "./CanvasLoader";
 export * from "./ContactIcons";
 export * from "./Footer";
