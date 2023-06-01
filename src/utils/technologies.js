@@ -20,24 +20,24 @@ export const technologies = [
     icon: "../../assets/tech/reactjs.png",
   },
   {
-    name: "Redux Toolkit",
-    icon: "../../assets/tech/redux.png",
+    name: "Angular",
+    icon: "../../assets/tech/angular.png",
   },
   {
-    name: "Tailwind CSS",
-    icon: "../../assets/tech/tailwind.png",
+    name: "C Sharp",
+    icon: "../../assets/tech/csharp.png",
   },
   {
-    name: "Node JS",
-    icon: "../../assets/tech/nodejs.png",
-  },
-  {
-    name: "MongoDB",
-    icon: "../../assets/tech/mongodb.png",
+    name: "SQL Server",
+    icon: "../../assets/tech/sqlserver.png",
   },
   {
     name: "git",
     icon: "../../assets/tech/git.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "../../assets/tech/tailwind.png",
   },
   {
     name: "figma",
