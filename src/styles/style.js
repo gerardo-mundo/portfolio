@@ -381,3 +381,8 @@ export const Img = styled.img`
     }
   }
 `;
+
+export const Paragraph = styled.p`
+  font-size: 12px;
+  margin: 0 0 5px 0;
+`;
