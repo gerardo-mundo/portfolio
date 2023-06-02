@@ -11,15 +11,15 @@ export const Projects = () => {
       <Element className="section" name="projects">
         <BlockContainer>
           <Animator>
-            <h3>¿Qué he hecho hasta ahora?</h3>
+            <h3>What I&apos;ve done so far?</h3>
           </Animator>
           <Animator>
-            <h2>Proyectos</h2>
+            <h2>My projects.</h2>
           </Animator>
           <Animator>
             <p>
-              Algunos proyectos que he desarrollado tanto de manera individual
-              como en equipo, son los siguientes:
+              Some projects that I&apos;ve developed both individually and as a
+              member of a team.
             </p>
           </Animator>
 

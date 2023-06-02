@@ -11,23 +11,23 @@ export const About = () => {
       <Element className="section" name="about">
         <BlockContainer>
           <Animator>
-            <h3>Introducción</h3>
+            <h3>Introduction</h3>
           </Animator>
           <Animator>
-            <h2>Sobre mí:</h2>
+            <h2>About me.</h2>
           </Animator>
           <Animator>
             <p>
-              Soy un desarrollador web que se especializa en el uso de
-              JavaScript, TypeScript, React, Angular y .Net Core. Me considero
-              un desarrollador apasionado que aprende con rapidez y que gusta de
-              colaborar cercanamente con miembros del equipo y clientes, con la
-              finalidad de crear soluciones eficientes, escalables y amigables,
-              que se enfoquen en solucionar problemas del mundo real
+              I&apos;m a web developer that specializes in JavaScript,
+              TypeScript, React, Angular, and .Net Core Framework. I consider
+              myself a passionate developer that learns quickly and who likes to
+              collaborate with clients and each member of a team, with the
+              finality of creating efficient, scalable, and friendship solutions
+              focused to resolve problems in the real world.
             </p>
           </Animator>
           <Animator>
-            <p>¡Trabajemos de la mano para traer tus ideas a la vida!</p>
+            <p>Let&apos;s work together to bring your ideas to the life!</p>
           </Animator>
 
           <div className="cards-container">

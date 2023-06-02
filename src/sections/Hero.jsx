@@ -10,18 +10,18 @@ export const Hero = () => {
         <Left>
           <Animator>
             <h1>
-              ¡Hola! <br /> Me llamo <br /> Gerardo Mundo
+              Hi! <br /> My name is <br /> Gerardo Mundo<strong>.</strong>
             </h1>
           </Animator>
           <Animator>
             <h2>
-              Desarrolador Web <span>| Fullstack</span>
+              I&apos;m a Web Developer <span>| Fullstack</span>
             </h2>
           </Animator>
           <Animator>
             <p>
-              Implemento soluciones con: JavaScript, TypeScript, C#, <br />{" "}
-              Angular, React, .Net Core, ASP.Net.
+              I develope and implement solutions with: JavaScript, TypeScript,
+              C#, Angular, React, .Net Core, ASP.Net and SQL Server.
             </p>
           </Animator>
         </Left>

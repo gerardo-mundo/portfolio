@@ -13,7 +13,7 @@ export const Technologies = () => {
             <h3>Technologies</h3>
           </Animator>
           <Animator>
-            <h2>My tech stack:</h2>
+            <h2>My tech stack.</h2>
           </Animator>
           <div className="cards-container">
             {technologies.map((technology) => (
