@@ -9,7 +9,7 @@ This project was made using React with Vite. The next libraries were used for an
 5. React Tilt v. 1.0.2
 6. Styled components v. 5.3.10
 
-## For installation:
+## Installation:
 
 1. Clone this repository
 2. Execute npm intall for installation of every dependency
