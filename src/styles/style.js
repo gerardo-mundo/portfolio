@@ -78,7 +78,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.main`
   color: white;
-  background-image: url("../assets/bg.jpeg");
+  background-image: url("../bg.jpeg");
   background-size: cover;
 `;
 

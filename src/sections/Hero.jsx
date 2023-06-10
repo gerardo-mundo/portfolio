@@ -26,7 +26,7 @@ export const Hero = () => {
           </Animator>
         </Left>
         <Right>
-          <Img alt="laptop_picture" src="../assets/laptop.png" />
+          <Img alt="laptop-picture" src="/laptop.png" />
         </Right>
       </Element>
     </header>

@@ -14,7 +14,7 @@ export const Footer = () => {
         All rights reserved <span>&copy;</span>
       </p>
       <p>
-        {month} de {year}
+        {year}, {month}.
       </p>
     </FooterContainer>
   );
