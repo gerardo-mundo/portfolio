@@ -2,6 +2,7 @@ import { Element } from "react-scroll";
 
 import { Img, Left, Right } from "../styles/style";
 import { Animator } from "../components/hoc/Animator";
+import laptop from "/laptop.png";
 
 export const Hero = () => {
   return (
@@ -26,7 +27,7 @@ export const Hero = () => {
           </Animator>
         </Left>
         <Right>
-          <Img alt="laptop-picture" src="/laptop.png" />
+          <Img alt="laptop-picture" src={laptop} />
         </Right>
       </Element>
     </header>

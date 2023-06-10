@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+const background = "./bg.jpeg";
+
 export const mainColor = "#8a56dd",
   hoverColor = "#7247b7",
   mint = "#2eb29b",
@@ -78,7 +80,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.main`
   color: white;
-  background-image: url("../bg.jpeg");
+  background-image: url(${background});
   background-size: cover;
 `;
 

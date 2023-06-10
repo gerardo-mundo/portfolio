@@ -1,46 +1,53 @@
+import html from "/tech/html.png";
+import css from "/tech/css.png";
+import javascript from "/tech/javascript.png";
+import typescript from "/tech/typescript.png";
+import react from "/tech/reactjs.png";
+import angular from "/tech/angular.png";
+import csharp from "/tech/csharp.png";
+import sqlserver from "/tech/sqlserver.png";
+import git from "/tech/git.png";
+import figma from "/tech/figma.png";
+
 export const technologies = [
   {
     name: "HTML 5",
-    icon: "/tech/html.png",
+    icon: html,
   },
   {
     name: "CSS 3",
-    icon: "/tech/css.png",
+    icon: css,
   },
   {
     name: "JavaScript",
-    icon: "/tech/javascript.png",
+    icon: javascript,
   },
   {
     name: "TypeScript",
-    icon: "/tech/typescript.png",
+    icon: typescript,
   },
   {
     name: "React JS",
-    icon: "/tech/reactjs.png",
+    icon: react,
   },
   {
     name: "Angular",
-    icon: "/tech/angular.png",
+    icon: angular,
   },
   {
     name: "C Sharp",
-    icon: "/tech/csharp.png",
+    icon: csharp,
   },
   {
     name: "SQL Server",
-    icon: "/tech/sqlserver.png",
+    icon: sqlserver,
   },
   {
     name: "git",
-    icon: "/tech/git.png",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "/tech/tailwind.png",
+    icon: git,
   },
   {
     name: "figma",
-    icon: "/tech/figma.png",
+    icon: figma,
   },
 ];

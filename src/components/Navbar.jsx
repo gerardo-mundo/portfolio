@@ -9,8 +9,8 @@ import { NavList } from "./NavList";
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
-  const menu = "/menu.svg";
-  const close = "/close.svg";
+  const menu = "./menu.svg";
+  const close = "./close.svg";
 
   return (
     <NavbarContainer>

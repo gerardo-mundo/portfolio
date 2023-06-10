@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import { useRef } from "react";
+
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export const Model3D = () => {
-  const model3D = useGLTF("/stylized_planet/scene.gltf");
+  const planet = "./stylized_planet/scene.gltf";
+
+  const model3D = useGLTF(planet);
 
   const meshRef = useRef();
 
