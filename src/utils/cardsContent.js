@@ -11,16 +11,16 @@ export const cardsContent = [
   },
   {
     title: "Backend",
-    content: ".NET & ASP.NET",
+    content: ".Net & ASP.Net",
     icon: creatorIcon,
   },
   {
-    title: "Diseño",
+    title: "Design",
     content: "Figma & Inkscape",
     icon: webIcon,
   },
   {
-    title: "Datos",
+    title: "Data",
     content: "My SQL Server",
     icon: mobileIcon,
   },
