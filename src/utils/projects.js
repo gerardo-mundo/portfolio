@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "Bibliotecary",
-    description: "Anagular, .Net Core, Sql Server",
+    description: "In development...coming soon in production!",
     url: "pendiente...",
     image: "projects/carrent.png",
   },
