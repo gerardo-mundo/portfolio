@@ -16,13 +16,13 @@ export const Hero = () => {
           </Animator>
           <Animator>
             <h2>
-              I&apos;m a Web Developer <span>| Fullstack</span>
+              I&apos;m a Web Developer <span>| Frontend</span>
             </h2>
           </Animator>
           <Animator>
             <p>
-              I develope and implement solutions with: JavaScript, TypeScript,
-              C#, Angular, React, .Net Core, ASP.Net and SQL Server.
+              I develope and implement solutions with: HTML, CSS, JavaScript,
+              TypeScript, Angular, React, .Net Core, ASP.Net and SQL Server.
             </p>
           </Animator>
         </Left>
