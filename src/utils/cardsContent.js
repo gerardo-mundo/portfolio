@@ -15,13 +15,13 @@ export const cardsContent = [
     icon: creatorIcon,
   },
   {
-    title: "Design",
-    content: "Figma & Inkscape",
+    title: "Microservices",
+    content: "Lambda & Docker",
     icon: webIcon,
   },
   {
     title: "Data",
-    content: "My SQL Server",
+    content: "SQL and NoSQL",
     icon: mobileIcon,
   },
 ];
