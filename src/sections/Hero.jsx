@@ -16,7 +16,7 @@ export const Hero = () => {
           </Animator>
           <Animator>
             <h2>
-              I&apos;m a Web Developer <span>| Frontend</span>
+              I&apos;m a Web Developer <span>| Full-Stack</span>
             </h2>
           </Animator>
           <Animator>
