@@ -3,7 +3,7 @@ export const ContactIcons = () => {
     <div className="svg-grouper">
       <a
         target="_blank"
-        href="https://github.com/gerardoMundo"
+        href="https://github.com/gerardo-mundo"
         rel="noreferrer"
       >
         <svg
