@@ -37,7 +37,7 @@ export const Projects = () => {
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <a href={project.url}>Ir al sitio</a>
+                    <a href={project.url}>Go to site</a>
                   </motion.div>
                 </CardImage>
               );
