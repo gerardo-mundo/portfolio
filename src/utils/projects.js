@@ -18,9 +18,9 @@ export const projects = [
     image: "projects/calendar_app.png",
   },
   {
-    title: "Bibliotecary",
-    description: "In development...coming soon in production!",
-    url: "pendiente...",
-    image: "projects/carrent.png",
+    title: "Library management",
+    description: "Angular, :NET Core, Docker",
+    url: "https://library-app-ge4j.onrender.com",
+    image: "projects/sisgeb.png",
   },
 ];
