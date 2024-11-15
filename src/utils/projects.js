@@ -14,7 +14,7 @@ export const projects = [
   {
     title: "App calendar",
     description: "React, Node.js, Express, MongoDB",
-    url: "https://calendar-backend-zi5m.onrender.com",
+    url: "https://photo-blog-mu.vercel.app/auth/login",
     image: "projects/calendar_app.png",
   },
   {
